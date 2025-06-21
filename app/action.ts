@@ -19,7 +19,7 @@ export async function formSubmission(formData: FormData) {
     if(!user){
         redirect("/api/auth/register")
     }
-    const data= await prisma.blogPosts.create({
+     await prisma.blogPosts.create({
         data: {
             title: title as string,
             content: content as string, 
