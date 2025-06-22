@@ -28,7 +28,7 @@ export default async function IdPage({ params }: { params: Params }) {
     const { id } = await params;
 
     const data = await getdata(id)
-    console.log(data)
+   
     return (
         <div className="max-w-4xl mx-auto py-8 px-6">
 

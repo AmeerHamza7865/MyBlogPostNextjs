@@ -1,6 +1,5 @@
 import BlogPostCard from "@/components/general/BlogPostCard";
 import prisma from "@/lib/prisma";
-import Image from "next/image";
 import { Suspense } from "react";
 async function getData() {
   await new Promise((resolve)=>setTimeout(resolve,2000))
